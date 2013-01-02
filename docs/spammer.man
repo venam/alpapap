@@ -1,0 +1,20 @@
+.TH SPAMMER 1 "2 Jan 13"
+.SH NAME
+spammer - spam an alpha number
+.SH SYNOPSIS
+[./coffee]
+.SH DESCRIPTION
+Spam an alpha number with the given thread number.
+It exploits the alpha server itself.
+.SS Options
+.TP
+You may set the number of thread with the wheel(spin button)
+.TP
+You set the number (8-digits) in the entry box(text box)
+.SH FILES
+.TP
+none
+.SH "SEE ALSO"
+curl(1), cmake(1)
+.SH BUGS
+May give headaches!

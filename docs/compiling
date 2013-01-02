@@ -1,0 +1,5 @@
+* By hand:
+
+g++ gui.cpp -Os -include spam.h spam.cpp  -s `pkg-config gtk+-2.0 --cflags` `pkg-config gtk+-2.0 --libs` -lcurl -lboost_thread -lboost_system -o spamer
+
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Spammer
+GenericName=Alpha Spammer
+Comment=A Spammer to spam Lebanese Alpha cellphones
+Terminal=false
+Type=Application
+Categories=Games
+StartupNotify=false
+Exec=/usr/bin/spammer
+Icon=emblem-danger

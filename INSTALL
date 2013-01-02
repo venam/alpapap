@@ -1,0 +1,13 @@
+== INSTALL ==
+ 1.) Linux
+
+
+== Linux ==
+
+ ./configure
+ cd build
+ make
+
+ * The binary is located in bin
+ * the lib in lib
+ :)
