@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../lib/libSpamFunctions.a  CMakeFiles/SpamFunctions.dir/spam.cpp.o
+/usr/bin/ranlib ../../lib/libSpamFunctions.a

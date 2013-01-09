@@ -1,0 +1,2 @@
+/home/raptor/alpha front end/alpapap/build/src/CMakeFiles/SpamFunctions.dir
+/home/raptor/alpha front end/alpapap/build/src/CMakeFiles/alpha_bomb.dir

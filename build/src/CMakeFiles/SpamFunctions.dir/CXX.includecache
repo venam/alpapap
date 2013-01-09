@@ -1,0 +1,50 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raptor/alpha front end/alpapap/src/spam.cpp
+spam.h
+/home/raptor/alpha front end/alpapap/src/spam.h
+iostream
+-
+unistd.h
+-
+cstring
+-
+boost/thread/thread.hpp
+-
+boost/thread/mutex.hpp
+-
+boost/bind.hpp
+-
+boost/thread/once.hpp
+-
+curl/curl.h
+-
+
+/home/raptor/alpha front end/alpapap/src/spam.h
+iostream
+-
+unistd.h
+-
+cstring
+-
+boost/thread/thread.hpp
+-
+boost/thread/mutex.hpp
+-
+boost/bind.hpp
+-
+boost/thread/once.hpp
+-
+curl/curl.h
+-
+unistd.h
+-
+curl/curl.h
+-
+
