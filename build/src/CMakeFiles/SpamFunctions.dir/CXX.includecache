@@ -6,9 +6,67 @@
 
 #IncludeRegexTransform: 
 
-/home/raptor/alpha front end/alpapap/src/spam.cpp
-spam.h
-/home/raptor/alpha front end/alpapap/src/spam.h
+/home/raptor/alpapap/src/Browser.hpp
+curl/curl.h
+-
+iostream
+-
+cstring
+-
+assert.h
+-
+vector
+-
+sstream
+-
+map
+-
+forms.hpp
+/home/raptor/alpapap/src/forms.hpp
+links.hpp
+/home/raptor/alpapap/src/links.hpp
+errno.h
+-
+
+/home/raptor/alpapap/src/forms.hpp
+cstring
+-
+iostream
+-
+vector
+-
+map
+-
+assert.h
+-
+regex.hpp
+/home/raptor/alpapap/src/regex.hpp
+
+/home/raptor/alpapap/src/links.hpp
+cstring
+-
+iostream
+-
+vector
+-
+iomanip
+-
+map
+-
+regex.hpp
+/home/raptor/alpapap/src/regex.hpp
+
+/home/raptor/alpapap/src/regex.hpp
+cstring
+-
+string
+-
+vector
+-
+map
+-
+
+/home/raptor/alpapap/src/spam.cpp
 iostream
 -
 unistd.h
@@ -23,10 +81,12 @@ boost/bind.hpp
 -
 boost/thread/once.hpp
 -
-curl/curl.h
--
+Browser.hpp
+/home/raptor/alpapap/src/Browser.hpp
+spam.h
+/home/raptor/alpapap/src/spam.h
 
-/home/raptor/alpha front end/alpapap/src/spam.h
+/home/raptor/alpapap/src/spam.h
 iostream
 -
 unistd.h

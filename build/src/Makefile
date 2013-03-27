@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/raptor/alpha front end/alpapap"
+CMAKE_SOURCE_DIR = /home/raptor/alpapap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/raptor/alpha front end/alpapap/build"
+CMAKE_BINARY_DIR = /home/raptor/alpapap/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/home/raptor/alpha front end/alpapap/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/raptor/alpha front end/alpapap/build/CMakeFiles" "/home/raptor/alpha front end/alpapap/build/src/CMakeFiles/progress.marks"
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/raptor/alpha front end/alpapap/build/CMakeFiles" 0
+	cd /home/raptor/alpapap/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/raptor/alpapap/build/CMakeFiles /home/raptor/alpapap/build/src/CMakeFiles/progress.marks
+	cd /home/raptor/alpapap/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raptor/alpapap/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/raptor/alpapap/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,22 +88,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/raptor/alpapap/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/raptor/alpapap/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/raptor/alpapap/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/SpamFunctions.dir/rule:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/SpamFunctions.dir/rule
+	cd /home/raptor/alpapap/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/SpamFunctions.dir/rule
 .PHONY : src/CMakeFiles/SpamFunctions.dir/rule
 
 # Convenience name for target.
@@ -112,12 +112,12 @@ SpamFunctions: src/CMakeFiles/SpamFunctions.dir/rule
 
 # fast build rule for target.
 SpamFunctions/fast:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f src/CMakeFiles/SpamFunctions.dir/build.make src/CMakeFiles/SpamFunctions.dir/build
+	cd /home/raptor/alpapap/build && $(MAKE) -f src/CMakeFiles/SpamFunctions.dir/build.make src/CMakeFiles/SpamFunctions.dir/build
 .PHONY : SpamFunctions/fast
 
 # Convenience name for target.
 src/CMakeFiles/alpha_bomb.dir/rule:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/alpha_bomb.dir/rule
+	cd /home/raptor/alpapap/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/alpha_bomb.dir/rule
 .PHONY : src/CMakeFiles/alpha_bomb.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ alpha_bomb: src/CMakeFiles/alpha_bomb.dir/rule
 
 # fast build rule for target.
 alpha_bomb/fast:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/build
+	cd /home/raptor/alpapap/build && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/build
 .PHONY : alpha_bomb/fast
 
 gui.o: gui.cpp.o
@@ -134,7 +134,7 @@ gui.o: gui.cpp.o
 
 # target to build an object file
 gui.cpp.o:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/gui.cpp.o
+	cd /home/raptor/alpapap/build && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/gui.cpp.o
 .PHONY : gui.cpp.o
 
 gui.i: gui.cpp.i
@@ -142,7 +142,7 @@ gui.i: gui.cpp.i
 
 # target to preprocess a source file
 gui.cpp.i:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/gui.cpp.i
+	cd /home/raptor/alpapap/build && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/gui.cpp.i
 .PHONY : gui.cpp.i
 
 gui.s: gui.cpp.s
@@ -150,7 +150,7 @@ gui.s: gui.cpp.s
 
 # target to generate assembly for a file
 gui.cpp.s:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/gui.cpp.s
+	cd /home/raptor/alpapap/build && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/gui.cpp.s
 .PHONY : gui.cpp.s
 
 spam.o: spam.cpp.o
@@ -158,8 +158,8 @@ spam.o: spam.cpp.o
 
 # target to build an object file
 spam.cpp.o:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f src/CMakeFiles/SpamFunctions.dir/build.make src/CMakeFiles/SpamFunctions.dir/spam.cpp.o
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/spam.cpp.o
+	cd /home/raptor/alpapap/build && $(MAKE) -f src/CMakeFiles/SpamFunctions.dir/build.make src/CMakeFiles/SpamFunctions.dir/spam.cpp.o
+	cd /home/raptor/alpapap/build && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/spam.cpp.o
 .PHONY : spam.cpp.o
 
 spam.i: spam.cpp.i
@@ -167,8 +167,8 @@ spam.i: spam.cpp.i
 
 # target to preprocess a source file
 spam.cpp.i:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f src/CMakeFiles/SpamFunctions.dir/build.make src/CMakeFiles/SpamFunctions.dir/spam.cpp.i
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/spam.cpp.i
+	cd /home/raptor/alpapap/build && $(MAKE) -f src/CMakeFiles/SpamFunctions.dir/build.make src/CMakeFiles/SpamFunctions.dir/spam.cpp.i
+	cd /home/raptor/alpapap/build && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/spam.cpp.i
 .PHONY : spam.cpp.i
 
 spam.s: spam.cpp.s
@@ -176,8 +176,8 @@ spam.s: spam.cpp.s
 
 # target to generate assembly for a file
 spam.cpp.s:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f src/CMakeFiles/SpamFunctions.dir/build.make src/CMakeFiles/SpamFunctions.dir/spam.cpp.s
-	cd "/home/raptor/alpha front end/alpapap/build" && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/spam.cpp.s
+	cd /home/raptor/alpapap/build && $(MAKE) -f src/CMakeFiles/SpamFunctions.dir/build.make src/CMakeFiles/SpamFunctions.dir/spam.cpp.s
+	cd /home/raptor/alpapap/build && $(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/spam.cpp.s
 .PHONY : spam.cpp.s
 
 # Help Target
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/raptor/alpapap/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

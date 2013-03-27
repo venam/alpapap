@@ -4,14 +4,14 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/raptor/alpha front end/alpapap/src/gui.cpp" "/home/raptor/alpha front end/alpapap/build/src/CMakeFiles/alpha_bomb.dir/gui.cpp.o"
-  "/home/raptor/alpha front end/alpapap/src/spam.cpp" "/home/raptor/alpha front end/alpapap/build/src/CMakeFiles/alpha_bomb.dir/spam.cpp.o"
+  "/home/raptor/alpapap/src/gui.cpp" "/home/raptor/alpapap/build/src/CMakeFiles/alpha_bomb.dir/gui.cpp.o"
+  "/home/raptor/alpapap/src/spam.cpp" "/home/raptor/alpapap/build/src/CMakeFiles/alpha_bomb.dir/spam.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/raptor/alpha front end/alpapap/build/src/CMakeFiles/SpamFunctions.dir/DependInfo.cmake"
+  "/home/raptor/alpapap/build/src/CMakeFiles/SpamFunctions.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
@@ -19,16 +19,16 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "/usr/include/gtk-2.0"
   "/usr/lib/gtk-2.0/include"
+  "/usr/include/pango-1.0"
   "/usr/include/atk-1.0"
   "/usr/include/cairo"
+  "/usr/include/pixman-1"
+  "/usr/include/libpng15"
   "/usr/include/gdk-pixbuf-2.0"
-  "/usr/include/pango-1.0"
+  "/usr/include/harfbuzz"
   "/usr/include/glib-2.0"
   "/usr/lib/glib-2.0/include"
-  "/usr/include/pixman-1"
   "/usr/include/freetype2"
-  "/usr/include/libpng15"
-  "/usr/include/harfbuzz"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

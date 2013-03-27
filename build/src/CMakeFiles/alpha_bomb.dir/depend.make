@@ -539,6 +539,10 @@ src/CMakeFiles/alpha_bomb.dir/gui.cpp.o: /usr/include/pango-1.0/pango/pangocairo
 src/CMakeFiles/alpha_bomb.dir/gui.cpp.o: /usr/lib/glib-2.0/include/glibconfig.h
 src/CMakeFiles/alpha_bomb.dir/gui.cpp.o: /usr/lib/gtk-2.0/include/gdkconfig.h
 
+src/CMakeFiles/alpha_bomb.dir/spam.cpp.o: ../src/Browser.hpp
+src/CMakeFiles/alpha_bomb.dir/spam.cpp.o: ../src/forms.hpp
+src/CMakeFiles/alpha_bomb.dir/spam.cpp.o: ../src/links.hpp
+src/CMakeFiles/alpha_bomb.dir/spam.cpp.o: ../src/regex.hpp
 src/CMakeFiles/alpha_bomb.dir/spam.cpp.o: ../src/spam.cpp
 src/CMakeFiles/alpha_bomb.dir/spam.cpp.o: ../src/spam.h
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/raptor/alpha front end/alpapap/src
+# Install script for directory: /home/raptor/alpapap/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

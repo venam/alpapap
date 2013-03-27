@@ -6,39 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/raptor/alpha front end/alpapap/src/gui.cpp
+/home/raptor/alpapap/src/gui.cpp
 stdlib.h
 -
 gtk/gtk.h
 -
-spam.h
-/home/raptor/alpha front end/alpapap/src/spam.h
-boost/thread/thread.hpp
--
-boost/bind.hpp
--
-
-/home/raptor/alpha front end/alpapap/src/spam.cpp
-spam.h
-/home/raptor/alpha front end/alpapap/src/spam.h
-iostream
--
 unistd.h
 -
-cstring
--
 boost/thread/thread.hpp
--
-boost/thread/mutex.hpp
 -
 boost/bind.hpp
 -
-boost/thread/once.hpp
--
-curl/curl.h
--
+spam.h
+/home/raptor/alpapap/src/spam.h
 
-/home/raptor/alpha front end/alpapap/src/spam.h
+/home/raptor/alpapap/src/spam.h
 iostream
 -
 unistd.h

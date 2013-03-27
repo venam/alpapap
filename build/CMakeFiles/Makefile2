@@ -50,10 +50,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/raptor/alpha front end/alpapap"
+CMAKE_SOURCE_DIR = /home/raptor/alpapap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/raptor/alpha front end/alpapap/build"
+CMAKE_BINARY_DIR = /home/raptor/alpapap/build
 
 #=============================================================================
 # Directory level rules for directory src
@@ -79,7 +79,7 @@ src/preinstall:
 src/CMakeFiles/SpamFunctions.dir/all:
 	$(MAKE) -f src/CMakeFiles/SpamFunctions.dir/build.make src/CMakeFiles/SpamFunctions.dir/depend
 	$(MAKE) -f src/CMakeFiles/SpamFunctions.dir/build.make src/CMakeFiles/SpamFunctions.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/raptor/alpha front end/alpapap/build/CMakeFiles"  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/raptor/alpapap/build/CMakeFiles  1
 	@echo "Built target SpamFunctions"
 .PHONY : src/CMakeFiles/SpamFunctions.dir/all
 
@@ -89,9 +89,9 @@ all: src/CMakeFiles/SpamFunctions.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/SpamFunctions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/raptor/alpha front end/alpapap/build/CMakeFiles" 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raptor/alpapap/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/SpamFunctions.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/raptor/alpha front end/alpapap/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raptor/alpapap/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/SpamFunctions.dir/rule
 
 # Convenience name for target.
@@ -114,7 +114,7 @@ clean: src/CMakeFiles/SpamFunctions.dir/clean
 src/CMakeFiles/alpha_bomb.dir/all: src/CMakeFiles/SpamFunctions.dir/all
 	$(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/depend
 	$(MAKE) -f src/CMakeFiles/alpha_bomb.dir/build.make src/CMakeFiles/alpha_bomb.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/raptor/alpha front end/alpapap/build/CMakeFiles"  2 3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/raptor/alpapap/build/CMakeFiles  2 3
 	@echo "Built target alpha_bomb"
 .PHONY : src/CMakeFiles/alpha_bomb.dir/all
 
@@ -124,9 +124,9 @@ all: src/CMakeFiles/alpha_bomb.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/alpha_bomb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/raptor/alpha front end/alpapap/build/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raptor/alpapap/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/alpha_bomb.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/raptor/alpha front end/alpapap/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raptor/alpapap/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/alpha_bomb.dir/rule
 
 # Convenience name for target.

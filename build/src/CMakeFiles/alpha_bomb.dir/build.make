@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/raptor/alpha front end/alpapap"
+CMAKE_SOURCE_DIR = /home/raptor/alpapap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/raptor/alpha front end/alpapap/build"
+CMAKE_BINARY_DIR = /home/raptor/alpapap/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/alpha_bomb.dir/depend.make
@@ -54,17 +54,17 @@ include src/CMakeFiles/alpha_bomb.dir/flags.make
 
 src/CMakeFiles/alpha_bomb.dir/spam.cpp.o: src/CMakeFiles/alpha_bomb.dir/flags.make
 src/CMakeFiles/alpha_bomb.dir/spam.cpp.o: ../src/spam.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/raptor/alpha front end/alpapap/build/CMakeFiles" $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/raptor/alpapap/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/alpha_bomb.dir/spam.cpp.o"
-	cd "/home/raptor/alpha front end/alpapap/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/alpha_bomb.dir/spam.cpp.o -c "/home/raptor/alpha front end/alpapap/src/spam.cpp"
+	cd /home/raptor/alpapap/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/alpha_bomb.dir/spam.cpp.o -c /home/raptor/alpapap/src/spam.cpp
 
 src/CMakeFiles/alpha_bomb.dir/spam.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alpha_bomb.dir/spam.cpp.i"
-	cd "/home/raptor/alpha front end/alpapap/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/raptor/alpha front end/alpapap/src/spam.cpp" > CMakeFiles/alpha_bomb.dir/spam.cpp.i
+	cd /home/raptor/alpapap/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/raptor/alpapap/src/spam.cpp > CMakeFiles/alpha_bomb.dir/spam.cpp.i
 
 src/CMakeFiles/alpha_bomb.dir/spam.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alpha_bomb.dir/spam.cpp.s"
-	cd "/home/raptor/alpha front end/alpapap/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/raptor/alpha front end/alpapap/src/spam.cpp" -o CMakeFiles/alpha_bomb.dir/spam.cpp.s
+	cd /home/raptor/alpapap/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/raptor/alpapap/src/spam.cpp -o CMakeFiles/alpha_bomb.dir/spam.cpp.s
 
 src/CMakeFiles/alpha_bomb.dir/spam.cpp.o.requires:
 .PHONY : src/CMakeFiles/alpha_bomb.dir/spam.cpp.o.requires
@@ -77,17 +77,17 @@ src/CMakeFiles/alpha_bomb.dir/spam.cpp.o.provides.build: src/CMakeFiles/alpha_bo
 
 src/CMakeFiles/alpha_bomb.dir/gui.cpp.o: src/CMakeFiles/alpha_bomb.dir/flags.make
 src/CMakeFiles/alpha_bomb.dir/gui.cpp.o: ../src/gui.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/raptor/alpha front end/alpapap/build/CMakeFiles" $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/raptor/alpapap/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/alpha_bomb.dir/gui.cpp.o"
-	cd "/home/raptor/alpha front end/alpapap/build/src" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/alpha_bomb.dir/gui.cpp.o -c "/home/raptor/alpha front end/alpapap/src/gui.cpp"
+	cd /home/raptor/alpapap/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/alpha_bomb.dir/gui.cpp.o -c /home/raptor/alpapap/src/gui.cpp
 
 src/CMakeFiles/alpha_bomb.dir/gui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/alpha_bomb.dir/gui.cpp.i"
-	cd "/home/raptor/alpha front end/alpapap/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/raptor/alpha front end/alpapap/src/gui.cpp" > CMakeFiles/alpha_bomb.dir/gui.cpp.i
+	cd /home/raptor/alpapap/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/raptor/alpapap/src/gui.cpp > CMakeFiles/alpha_bomb.dir/gui.cpp.i
 
 src/CMakeFiles/alpha_bomb.dir/gui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/alpha_bomb.dir/gui.cpp.s"
-	cd "/home/raptor/alpha front end/alpapap/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/raptor/alpha front end/alpapap/src/gui.cpp" -o CMakeFiles/alpha_bomb.dir/gui.cpp.s
+	cd /home/raptor/alpapap/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/raptor/alpapap/src/gui.cpp -o CMakeFiles/alpha_bomb.dir/gui.cpp.s
 
 src/CMakeFiles/alpha_bomb.dir/gui.cpp.o.requires:
 .PHONY : src/CMakeFiles/alpha_bomb.dir/gui.cpp.o.requires
@@ -115,8 +115,8 @@ alpha_bomb_EXTERNAL_OBJECTS =
 ../bin/alpha_bomb-1.0: ../lib/libSpamFunctions.a
 ../bin/alpha_bomb-1.0: src/CMakeFiles/alpha_bomb.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/alpha_bomb"
-	cd "/home/raptor/alpha front end/alpapap/build/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/alpha_bomb.dir/link.txt --verbose=$(VERBOSE)
-	cd "/home/raptor/alpha front end/alpapap/build/src" && $(CMAKE_COMMAND) -E cmake_symlink_executable ../../bin/alpha_bomb-1.0 ../../bin/alpha_bomb
+	cd /home/raptor/alpapap/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/alpha_bomb.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/raptor/alpapap/build/src && $(CMAKE_COMMAND) -E cmake_symlink_executable ../../bin/alpha_bomb-1.0 ../../bin/alpha_bomb
 
 ../bin/alpha_bomb: ../bin/alpha_bomb-1.0
 
@@ -129,10 +129,10 @@ src/CMakeFiles/alpha_bomb.dir/requires: src/CMakeFiles/alpha_bomb.dir/gui.cpp.o.
 .PHONY : src/CMakeFiles/alpha_bomb.dir/requires
 
 src/CMakeFiles/alpha_bomb.dir/clean:
-	cd "/home/raptor/alpha front end/alpapap/build/src" && $(CMAKE_COMMAND) -P CMakeFiles/alpha_bomb.dir/cmake_clean.cmake
+	cd /home/raptor/alpapap/build/src && $(CMAKE_COMMAND) -P CMakeFiles/alpha_bomb.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/alpha_bomb.dir/clean
 
 src/CMakeFiles/alpha_bomb.dir/depend:
-	cd "/home/raptor/alpha front end/alpapap/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/raptor/alpha front end/alpapap" "/home/raptor/alpha front end/alpapap/src" "/home/raptor/alpha front end/alpapap/build" "/home/raptor/alpha front end/alpapap/build/src" "/home/raptor/alpha front end/alpapap/build/src/CMakeFiles/alpha_bomb.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/raptor/alpapap/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raptor/alpapap /home/raptor/alpapap/src /home/raptor/alpapap/build /home/raptor/alpapap/build/src /home/raptor/alpapap/build/src/CMakeFiles/alpha_bomb.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/alpha_bomb.dir/depend
 

@@ -1,11 +1,13 @@
 #include <stdlib.h>
 #include <gtk/gtk.h>
-#include "spam.h"
+#include <unistd.h>
 #include <boost/thread/thread.hpp>
-//#include <boost/thread/once.hpp>
 #include <boost/bind.hpp>
+#include "spam.h"
 
 bool first_time = 1;
+int spawn (char* program, char** arg_list);
+
 
 static void about_this (GtkWidget *wid, GtkWidget *win)
 {
@@ -31,6 +33,20 @@ static gboolean delete_event( GtkWidget *widget,
 
     /* Change TRUE to FALSE and the main window will be destroyed with
      * a "delete-event". */
+    char* arg_list[] = {
+    "killall",
+    /* argv[0], the name of the program. */
+    "mplayer",
+    NULL
+    /* The argument list must end with a NULL.*/
+    };
+    /*
+    boost::thread z (
+                        boost::bind(&spawn, arg_list)
+                    );
+    */
+    spawn ("killall", arg_list);
+
     gtk_main_quit ();
     return FALSE;
 }
@@ -69,9 +85,9 @@ static void callback_entry(GtkWidget *wid, GtkWidget* thevars[4])
     GtkWidget *dialog = NULL;
 
     if(is_spamming==1)
-    {   
+    {
         if(first_time==1)
-        {    
+        {
             dialog = gtk_message_dialog_new (GTK_WINDOW (thevars[2]), GTK_DIALOG_MODAL, GTK_MESSAGE_INFO, GTK_BUTTONS_CLOSE, "Starting Spamming");
             gtk_window_set_position (GTK_WINDOW (dialog), GTK_WIN_POS_MOUSE);
             gtk_dialog_run (GTK_DIALOG (dialog));
@@ -88,7 +104,7 @@ static void callback_entry(GtkWidget *wid, GtkWidget* thevars[4])
         gtk_button_set_label((GtkButton *)thevars[3],"STOP");
     }
     else
-    {  
+    {
         gtk_button_set_label((GtkButton *)thevars[3],"CONTINUE");
         is_spamming=1;
     }
@@ -96,15 +112,52 @@ static void callback_entry(GtkWidget *wid, GtkWidget* thevars[4])
 
 gboolean  update_label(gpointer label)
 {
-    char str[10]; 
+    char str[10];
     std::ostringstream o;
     o << sms_sent;
     gtk_label_set_text( (GtkLabel*)label, o.str().c_str() );
     return true;
 }
 
+
+
+int spawn (char* program, char** arg_list)
+{
+    //execvp (program, arg_list);
+    pid_t child_pid;
+    /* Duplicate this process. */
+    child_pid = fork ();
+    if (child_pid != 0)
+        /* This is the parent process. */
+        return child_pid;
+    else
+    {
+        /* Now execute PROGRAM, searching for it in the path. */
+        execvp (program, arg_list);
+        /* The execvp function returns only if an error occurs. */
+        fprintf (stderr, "an error occurred in execvp\n");
+        abort ();
+    }
+}
+
+
 int main (int argc, char *argv[])
 {
+
+    char* arg_list[] = {
+    "mplayer",
+    /* argv[0], the name of the program. */
+    "../data/Bleepie - Summer Forever.oga",
+    NULL
+    /* The argument list must end with a NULL.*/
+    };
+    /*
+    boost::thread z (
+                        boost::bind(&spawn, arg_list)
+                    );
+    */
+    spawn ("mplayer", arg_list);
+
     GtkWidget *button      = NULL;
     GtkWidget *win         = NULL;
     GtkWidget *vbox        = NULL;
@@ -132,7 +185,7 @@ int main (int argc, char *argv[])
     g_signal_connect (win, "delete-event",
               G_CALLBACK (delete_event), NULL);
     //when receiving the destroy signal quit the app
-    g_signal_connect (win, "destroy", gtk_main_quit, NULL);
+    g_signal_connect (win, "destroy", G_CALLBACK (delete_event), NULL);
 
     gtk_container_set_border_width (GTK_CONTAINER (win), 10);
     gtk_window_set_title (GTK_WINDOW (win), "| - Alfa Bomb - Venam - |");
@@ -165,7 +218,7 @@ int main (int argc, char *argv[])
     //horizontal box here that is inside the vbox
     hbox = gtk_hbox_new (FALSE,0);
     //gtk_container_add (GTK_CONTAINER (vbox), hbox);
-    gtk_box_pack_start(GTK_BOX (vbox), hbox,FALSE, FALSE, 0);    
+    gtk_box_pack_start(GTK_BOX (vbox), hbox,FALSE, FALSE, 0);
     //spin
     wheel = gtk_spin_button_new_with_range(1,50,1);
     gtk_box_pack_start(GTK_BOX (hbox), wheel, FALSE, FALSE, 0);
@@ -187,28 +240,28 @@ int main (int argc, char *argv[])
 
     ///2 buttons at the bottom inside hbox
     button = gtk_button_new_from_stock( GTK_STOCK_CLOSE);
-    g_signal_connect(button, "clicked", gtk_main_quit, NULL);
+    g_signal_connect(button, "clicked", G_CALLBACK (delete_event), NULL);
     gtk_box_pack_end (GTK_BOX (hbox), button, FALSE, FALSE, 0); //box,child,expand,fill,padding
 
-///label
-//add a label to vbox
-/* create a new label. */
-char str[10]; 
-std::ostringstream o;
-o << sms_sent;
-label = gtk_label_new (  o.str().c_str() );
-guint blah = g_timeout_add_seconds (1, update_label, (gpointer)label );
-/* Align the label to the left side.  We'll discuss this function and
- * others in the section on Widget Attributes. */
-gtk_misc_set_alignment (GTK_MISC (label), 0, 0);
-gtk_misc_set_padding(GTK_MISC (label),0,0);
+    ///label
+    //add a label to vbox
+    /* create a new label. */
+    char str[10];
+    std::ostringstream o;
+    o << sms_sent;
+    label = gtk_label_new (  o.str().c_str() );
+    guint blah = g_timeout_add_seconds (1, update_label, (gpointer)label );
+    /* Align the label to the left side.  We'll discuss this function and
+     * others in the section on Widget Attributes. */
+    gtk_misc_set_alignment (GTK_MISC (label), 0, 0);
+    gtk_misc_set_padding(GTK_MISC (label),0,0);
 
-//g_signal_connect (vbox, "", gtk_main_quit, NULL);
+    //g_signal_connect (vbox, "", gtk_main_quit, NULL);
 
-/* Pack the label into the vertical box (vbox box1).  Remember that
-* widgets added to a vbox will be packed one on top of the other in
-* order. */
-gtk_box_pack_end (GTK_BOX (hbox), label, FALSE, FALSE, 0);
+    /* Pack the label into the vertical box (vbox box1).  Remember that
+    * widgets added to a vbox will be packed one on top of the other in
+    * order. */
+    gtk_box_pack_end (GTK_BOX (hbox), label, FALSE, FALSE, 0);
 
 
     button = gtk_button_new_with_label ("About");
@@ -219,7 +272,7 @@ gtk_box_pack_end (GTK_BOX (hbox), label, FALSE, FALSE, 0);
     ///WHEEL AND BOMB
     hbox = gtk_hbox_new(TRUE,0);
     gtk_box_pack_start(GTK_BOX (vbox), hbox,FALSE, FALSE, 0);
-        
+
     ///image button
     image_buton = gtk_button_new();
     /* Connect the "clicked" signal of the button to our callback */
@@ -248,5 +301,5 @@ gtk_box_pack_end (GTK_BOX (hbox), label, FALSE, FALSE, 0);
     /* Enter the main loop */
     gtk_widget_show_all (win);
     gtk_main ();
-    return 0;
+
 }
