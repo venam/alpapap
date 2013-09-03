@@ -1,4 +1,4 @@
-# <patrick@unixhub.net>. Copyright (C) <2013>. <BSD-License>.
+# <patrick at unixhub.net>. Copyright (C) <2013>. <BSD-License>.
 
 #
 # Project Properties
